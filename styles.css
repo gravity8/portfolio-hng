@@ -224,7 +224,7 @@ nav>.navlinks-container>.close-X{
 /* skills */
 .section{
     padding-top: 4rem;
-    padding-inline:50px;
+    padding-inline:30px;
     margin-bottom: 7rem;
 }
 .section-header{
@@ -283,7 +283,6 @@ nav>.navlinks-container>.close-X{
 
 /* Goals  */
 .goals-section {
-    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -388,10 +387,7 @@ nav>.navlinks-container>.close-X{
         transform: translateX(0);
     }
 }
-@media screen and (max-width:768px) {
-    section{
-
-    }
+@media (max-width: 768px) {
     nav>.navlinks-container{
         position: fixed;
         flex-direction: column;
@@ -449,12 +445,6 @@ nav>.navlinks-container>.close-X{
     .home-container .left-container h3{
         margin-bottom: 20px;
     }
-    .skills-section .skill-container .skill{
-        flex: 1;
-    }
-    .skills-section .skill-container .skill{
-        flex: 0 1 calc((100%/2) - 20px); 
-    }
     .goal p {
         color: #666;
         margin: 0;
@@ -462,6 +452,10 @@ nav>.navlinks-container>.close-X{
     }
     .section{
         padding-inline: 40px;
+    }
+    .section .skill-container .skill{
+        flex: 0 1 calc(50% - 20px);
+        margin-bottom: 30px;
     }
 }
 @media screen and (max-width:400px){
@@ -473,8 +467,9 @@ nav>.navlinks-container>.close-X{
     .home-container .left-container h1{
         font-size: 30px;
     }
-    .skills-section .skill-container .skill{
-        width: 100% !important;
+    .section .skill-container .skill{
+        flex: 0 1 100%;
+        margin-bottom: 30px;
     }
 } 
 
